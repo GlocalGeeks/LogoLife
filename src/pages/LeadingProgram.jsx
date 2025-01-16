@@ -19,8 +19,7 @@ export const LeadingProgram = () => {
       <Navbar />
       <TechHero />
       <TechHeroLogo />
-      <TestingCarousel />
-      {/* <LogoCarousel /> */}
+      <LogoCarousel />
       <TestimonialSection />
       <ExpertsSection />
       <AdvantageSection />

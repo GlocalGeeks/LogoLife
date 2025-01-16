@@ -18,8 +18,7 @@ export const Home = () => {
       <Navbar />
       <Hero />
       <HeroFacts />
-      <TestingCarousel />
-      {/* <LogoCarousel /> */}
+      <LogoCarousel />
       <TestimonialSection />
       <ExpertsSection />
       <AdvantageSection />
