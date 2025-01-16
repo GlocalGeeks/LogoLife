@@ -1,0 +1,154 @@
+.experts-section {
+    margin-top: 70px;
+    /* background-color: #F9F5ED; */
+    background: radial-gradient(29.72% 29.72% at 53.02% 70.28%, rgba(148, 136, 85, 0.41) 0%, #F9F5ED 100%);
+    padding: 100px 0px;
+
+}
+
+.experts-heading-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.experts-heading-container .subtitle {
+    font-family: 'SFPro', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 16px;
+    font-style: italic;
+    color: #08313A;
+}
+
+.experts-heading-container h2 {
+    color: #08313A;
+    font-family: 'SFPro', sans-serif;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 52.2px;
+    text-align: center;
+
+}
+
+.experts-heading-container h2 .facts {
+    background: linear-gradient(to right, #91854C 0%, #DBCD89 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Lora", Sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 52.2px;
+    font-style: italic;
+
+}
+
+.experts-heading-container h2 .experts {
+    color: #08313A;
+    font-family: "Lora", Sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52.2px;
+    font-style: italic;
+
+}
+
+.universties-list {
+    margin-top: 10px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+  
+
+.universties-list img {
+    -webkit-user-drag: none;
+    pointer-events: none;
+    width: 50%;
+}
+
+
+
+
+/* Large tablets & desktops */
+@media (max-width: 1440px) {
+
+    
+.experts-heading-container .subtitle {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.experts-heading-container h2, .experts-heading-container h2 .facts, .experts-heading-container h2 .experts {
+    font-size: 40px;
+    line-height: 52.2px;
+}
+    
+}
+
+
+/* Small laptops */
+@media (max-width: 1280px) {
+
+    .experts-heading-container h2, .experts-heading-container h2 .facts, .experts-heading-container h2 .experts {
+        font-size: 38px;
+        line-height: 45.2px;
+    }
+
+    .universties-list img {
+        margin-top: 0;
+        width: 70%;
+    }
+    
+
+    
+}
+
+@media (max-width: 998px) { 
+    .experts-section {
+        background: #F9F5ED 100%;
+    }
+
+    .experts-heading-container h2, .experts-heading-container h2 .facts, .experts-heading-container h2 .experts {
+        font-size: 35px;
+        line-height: 45.2px;
+    }
+
+    .universties-list img {
+        margin-top: 0;
+        width: 100%;
+    }
+
+
+}
+
+/* Tablet (portrait) */
+@media (max-width: 768px) {
+
+
+
+    .experts-heading-container h2, .experts-heading-container h2 .facts, .experts-heading-container h2 .experts {
+        font-size: 35px;
+        line-height: 44.2px;
+    }
+
+    .universties-list img {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+  
+   
+}
+
+
+/* Mobile (large devices) */
+@media (max-width: 600px) {
+
+         
+}

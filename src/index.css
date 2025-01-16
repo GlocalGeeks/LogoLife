@@ -1,0 +1,80 @@
+@import './styles/fonts.css';
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+}
+
+
+.main-container {
+    padding: 0 10%;
+    overflow-x: hidden;
+}
+
+
+
+/* Large desktops and high-resolution screens */
+@media (max-width: 1920px) {
+    .main-container {
+        padding: 0 8%;
+    }
+
+}
+
+/* Large tablets & desktops */
+@media (max-width: 1440px) {
+    .main-container {
+        padding: 0 6%;
+    }
+
+    
+}
+
+
+/* Small laptops */
+@media (max-width: 1280px) {
+    .main-container {
+        padding: 0 6%;
+    }
+
+    
+}
+
+/* Tablet (portrait) */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 0 5%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+   
+}
+
+
+/* Mobile (large devices) */
+@media (max-width: 600px) {
+    .main-container {
+        padding: 0 6%;
+    }
+        
+}

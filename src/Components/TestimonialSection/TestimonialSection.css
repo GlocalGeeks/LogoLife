@@ -1,0 +1,177 @@
+
+.testimonials-secttion {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-secttion .top-container p{
+    font-family: 'SFPro', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 15.51px;
+}
+
+.testimonials-secttion .top-container h1{
+    font-family: 'SFPro', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 58px;
+    color: #08313A;
+}
+
+.top-container h1 span{
+    font-family: "Lora", Sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 58px;
+}
+
+.testimonials-secttion .bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.consultation-btn {
+    font-family: "Lora", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #EADEA7;
+    background-color: #08313A;
+    border-style: none;
+    border-radius: 26px 26px 26px 26px;
+    padding: 13px 25px;
+    cursor: pointer;
+    width: 370px;
+    height: 50px;
+    margin-top: -100px;
+
+}
+
+.testimonial-slider-container .slick-arrow.slick-prev {
+    position: absolute;
+    background: url("../../assets/prev-icon.png") no-repeat center center; /* Add your icon URL here */
+    background-size: contain; /* Ensure the image fits */
+    color: transparent; /* Hide the text */
+    border: none; /* Remove default button border */
+    width: 30px; /* Adjust width to fit your icon */
+    height: 30px; /* Adjust height to fit your icon */
+    text-indent: -9999px; /* Completely hide the text */
+    cursor: pointer; /* Add a pointer for better UX */
+    top: 115%;
+    left: 2%;
+  }
+
+.testimonial-slider-container .slick-arrow.slick-next {
+    position: absolute;
+    background: url("../../assets/next-icon.png") no-repeat center center; /* Add your icon URL here */
+    background-size: contain; /* Ensure the image fits */
+    color: transparent; /* Hide the text */
+    border: none; /* Remove default button border */
+    width: 30px; /* Adjust width to fit your icon */
+    height: 30px; /* Adjust height to fit your icon */
+    text-indent: -9999px; /* Completely hide the text */
+    cursor: pointer; /* Add a pointer for better UX */
+    top: 115%;
+    right: 2%;
+  }
+
+
+  
+
+/* Large tablets & desktops */
+@media (max-width: 1440px) {
+
+    .testimonials-secttion .top-container h1{
+        font-size: 42px;
+        line-height: 42px;
+    }
+    
+    .top-container h1 span{
+        font-size: 42px;
+        line-height: 42px;
+    }
+    
+    
+}
+
+
+/* Small laptops */
+@media (max-width: 1280px) {
+
+    
+    .testimonials-secttion .top-container h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .top-container h1 span{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+
+    
+}
+
+@media (max-width: 998px) { 
+
+    .testimonial-slider-container .slick-arrow.slick-prev {
+        top: 105%;
+        left: 2%;
+    }
+
+    .testimonial-slider-container .slick-arrow.slick-next {
+        top: 105%;
+        right: 2%;
+    }
+    
+
+}
+
+
+
+/* Tablet (portrait) */
+@media (max-width: 768px) {
+
+    .testimonials-secttion {
+        margin-top: 25px; }
+
+    .testimonials-secttion .top-container h1{
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
+    .top-container h1 span{
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .testimonial-slider-container .slick-arrow.slick-prev {
+        top: 105%;
+        left: 2%;
+    }
+
+    .testimonial-slider-container .slick-arrow.slick-next {
+        top: 105%;
+        right: 2%;
+    }
+
+    .consultation-btn {
+        margin-top: 15px;
+    }
+   
+}
+
+
+/* Mobile (large devices) */
+@media (max-width: 600px) {
+
+         
+}

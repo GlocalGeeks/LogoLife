@@ -1,0 +1,432 @@
+.bg-color {
+    position: relative;
+    background: url("../../assets/hero-overlay.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg-color::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(32.19% 60.91% at 50.94% 49.93%, #184A43 0.01%, #08313A 100%);
+    z-index: -50;
+    pointer-events: none; /* Ensures it doesn't interfere with user interactions */
+}
+
+ 
+
+.tech-program {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 130px;
+
+}
+
+.tech-hero-section{
+    padding: 130px 0px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.tech-left-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+    
+
+}
+
+.tech-right-container {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tech-hero-video-img{
+    width: 70%;
+    border-radius: 24px;
+    box-shadow: 0 0 22.7px 0 rgba(0, 0, 0, 0.226);
+    background: linear-gradient(180deg, #7E7136 50%, #EADEA7 100%);
+
+
+}
+
+.tech-hero-video {
+
+    width: 80%;
+    border-radius: 24px;
+    box-shadow: 0 0 22.7px 0 rgba(0, 0, 0, 0.226);
+
+}
+
+.tech-play-icon {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+.tech-consultation-btn {
+    width: 30%;
+    display: block;
+}
+
+  .tech-left-container .tech-parent-btn {
+    width: fit-content;  
+    max-width: 100%;
+    font-family: 'SFPro', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(108.51deg, rgba(28, 36, 37, 0.65) -40.53%, rgba(171, 160, 107, 0.65) 77.84%, rgba(148, 136, 85, 0.65) 172.32%);
+    border-radius: 17px 17px 17px 17px;
+    border: none;
+    padding: 8px 35px;
+  }
+
+
+
+  .tech-hero-heading {
+    font-family: 'SFPro', sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 400;
+    color: rgba(249, 245, 237, 1);
+    letter-spacing: -1px;
+
+  }
+
+
+  .tech-hero-gradient-h1 {
+    font-family: "Lora", Sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 400;
+    font-style: italic;
+    background: linear-gradient(264.93deg, #FDF3C5 53.23%, #7E7136 95.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    line-height: 1px;
+}
+
+.tech-review-logo {
+    width: 300px;
+}
+
+.tech-right-container .tech-consultation-btn {
+    display: none;
+}
+
+
+
+
+/* ---------------------------- Tech Hero Facts --------------------------------------------*/
+
+
+.tech-hero-facts {
+    width: 100%;
+    display: flex;
+
+}
+
+.tech-hero-facts-container {
+    width: 90%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    gap: 50px;
+    border-radius: 17px;
+    background: linear-gradient(90deg, rgba(31, 31, 31, 0.7) 0%, #1F1F1F 100%);
+
+}
+
+.tech-fact-item {
+    display: flex;
+    gap: 15px;
+    border-radius: 36px;
+    border: 1px solid #948855;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tech-fact-item h2 {
+    background: linear-gradient(to right, #ABA06B 0%, #7E7136 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Lora", Sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.tech-fact-item p {
+    color: white;
+    font-family: "Lora", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 200px;
+}
+
+/* Large tablets & desktops */
+@media (max-width: 1440px) {
+
+    .tech-program { padding-bottom: 120px;}
+
+    .tech-hero-heading, .tech-hero-gradient-h1 {
+        font-size: 40px;
+        line-height: 46px;  
+      }
+
+      .tech-left-container .tech-parent-btn {
+        font-size: 15px;
+        padding: 7px 30px;
+      }
+
+      .tech-hero-facts-container {
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .tech-fact-item { 
+        padding: 10px 15px;
+    }
+    
+}
+
+
+/* Small laptops */
+@media (max-width: 1280px) {
+
+    .tech-hero-section{
+        padding: 100px 0px 0px 0px;     
+    }
+
+    .tech-hero-heading, .tech-hero-gradient-h1 {
+        font-size: 38px;
+        line-height: 46px;  
+      }
+
+    .tech-review-logo {
+        width: 250px;
+    }
+
+    .tech-play-icon {
+        width: 40px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+
+    .tech-hero-facts-container {
+        gap: 40px;
+        padding: 25px;
+    }
+
+    .tech-hero-facts {
+
+        padding: 0 0%;
+
+    }
+
+    .tech-hero-facts-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    
+}
+
+
+@media (max-width: 998px) {
+
+    .tech-program { padding-bottom: 100px;}
+
+
+
+    .tech-hero-section{
+        padding: 60px 0 0px 0;
+        flex-direction: column;
+        gap: 20px;   
+    }
+
+    .tech-consultation-btn {
+        width: 40%;
+        display: block;
+        margin: 0 auto
+        
+    }
+
+    .tech-left-container, .tech-right-container {
+        width: 100%;
+    }
+
+    .tech-hero-heading, .tech-hero-gradient-h1 {
+        font-size: 38px;
+        line-height: 46px;  
+        text-align: center;
+      }
+      
+      .tech-review-logo {
+        width: 220px;  
+        margin: 0 auto;  
+        display: block;  
+    }
+
+    .tech-left-container .tech-parent-btn {
+        margin: 0 auto;  
+        display: block;
+        margin-bottom: -15px;
+      }
+
+    .tech-right-container .tech-consultation-btn {
+        display: block;
+    }
+
+    .tech-left-container .tech-consultation-btn {
+        display: none;
+    }
+
+    .tech-play-icon {
+        width: 40px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+
+    .tech-hero-video {
+
+        width: 100%;
+        border-radius: 24px;
+        box-shadow: 0 0 22.7px 0 rgba(0, 0, 0, 0.226);
+    
+    }
+
+    .tech-hero-facts {
+        width: 100%;
+        display: flex;
+    
+    }
+
+    .tech-hero-facts-container {
+        
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        width: 100%;
+        gap: 10px;
+    }
+
+    .tech-fact-item { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;}
+        
+
+        .tech-fact-item h2 {
+            font-size: 25px;
+        }
+        
+        .tech-fact-item p {
+            font-size: 13px;
+            text-align: center;
+            
+        }
+
+
+   
+}
+
+/* Tablet (portrait) */
+@media (max-width: 768px) {
+
+    .tech-program { padding-bottom: 80px; margin-bottom: 50px;}
+
+
+    .tech-hero-section{
+        padding: 60px 0 0px;
+        flex-direction: column;   
+    }
+
+    .tech-hero-heading, .tech-hero-gradient-h1 {
+        font-size: 29px;
+        line-height: 38px;
+      }
+
+
+      .tech-left-container .consultation-btn, .tech-right-container .consultation-btn {
+        margin-top: -3px;
+        width: 220px;
+        height: 45px;
+      }
+
+      .tech-consultation-btn {
+        width: 55%; }
+
+        
+        .tech-hero-facts-container {
+            width: 100%;
+            padding: 20px 15px;
+        }
+        
+    
+        .tech-fact-item { 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;}
+            
+    
+            .tech-fact-item h2 {
+                font-size: 16px;
+            }
+            
+            .tech-fact-item p {
+                font-size: 8px;
+                line-height: 15px;
+                text-align: center;
+                width: 100px;
+                color: white;
+                
+            }
+      
+}
+
+/* Mobile (large devices) */
+@media (max-width: 600px) {
+
+    .tech-fact-item p {
+        font-size: 9px;
+        text-align: center;
+        width: 100px;
+        
+    }
+
+}

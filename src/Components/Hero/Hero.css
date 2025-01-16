@@ -1,0 +1,258 @@
+.dark-color {
+    
+    background: url("../../assets/hero-overlay.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #F8F5EE;
+}
+
+.hero-section{
+    padding: 160px 0px 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    gap: 20px;
+    
+
+}
+
+.right-container {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-video {
+
+    width: 90%;
+    border-radius: 24px;
+    box-shadow: 0 0 22.7px 0 rgba(0, 0, 0, 0.226);
+
+}
+
+
+
+.play-icon {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+.left-container .consultation-btn, .right-container .consultation-btn {
+    font-family: "Lora", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #91854C;
+    border-style: none;
+    border-radius: 26px 26px 26px 26px;
+    padding: 13px 25px;
+    cursor: pointer;
+    width: 230px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .left-container .parent-btn {
+    width: fit-content;  
+    max-width: 100%;
+    font-family: 'SFPro', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    font-style: italic;
+    color: #08313A;
+    background: linear-gradient(283.67deg, rgba(153, 142, 86, 0.1) 89.56%, rgba(170, 159, 106, 0.4) 167.2%);
+    border-radius: 17px 17px 17px 17px;
+    border: none;
+    padding: 8px 35px;
+  }
+
+
+
+  .hero-heading {
+    font-family: 'SFPro', sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 400;
+    color: #08313A;
+    letter-spacing: -1px;
+
+  }
+
+
+  .hero-gradient-h1 {
+    font-family: "Lora", Sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 400;
+    font-style: italic;
+    background: linear-gradient(264.93deg, #ABA06B 53.23%, #7E7136 95.23%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    line-height: 1px;
+}
+
+.review-logo {
+    width: 300px;
+}
+
+.right-container .consultation-btn {
+    display: none;
+}
+
+
+
+/* Large tablets & desktops */
+@media (max-width: 1440px) {
+
+    .hero-heading, .hero-gradient-h1 {
+        font-size: 40px;
+        line-height: 46px;  
+      }
+
+      .left-container .parent-btn {
+        font-size: 15px;
+        padding: 7px 30px;
+      }
+    
+}
+
+
+/* Small laptops */
+@media (max-width: 1280px) {
+
+    .hero-section{
+        padding: 120px 0;     
+    }
+
+    .hero-heading, .hero-gradient-h1 {
+        font-size: 38px;
+        line-height: 46px;  
+      }
+
+    .review-logo {
+        width: 250px;
+    }
+
+    .play-icon {
+        width: 40px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+
+    
+}
+
+
+@media (max-width: 998px) {
+
+    .hero-section{
+        padding: 60px 0 130px 0;
+        flex-direction: column;
+        gap: 20px;   
+    }
+
+    .left-container .consultation-btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .left-container, .right-container {
+        width: 100%;
+    }
+
+    .hero-heading, .hero-gradient-h1 {
+        font-size: 38px;
+        line-height: 46px;  
+        text-align: center;
+      }
+      
+      .review-logo {
+        width: 220px;  
+        margin: 0 auto;  
+        display: block;  
+    }
+
+    .left-container .parent-btn {
+        margin: 0 auto;  
+        display: block;
+        margin-bottom: -15px;
+      }
+
+    .right-container .consultation-btn {
+        display: block;
+    }
+
+    .left-container .consultation-btn {
+        display: none;
+    }
+
+    .play-icon {
+        width: 40px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+
+    .hero-video {
+        width: 100%;
+    }
+
+
+   
+}
+
+/* Tablet (portrait) */
+@media (max-width: 768px) {
+
+    .hero-section{
+        padding: 60px 0 100px;
+        flex-direction: column;   
+    }
+
+    .hero-heading, .hero-gradient-h1 {
+        font-size: 29px;
+        line-height: 38px;
+      }
+
+
+      .left-container .consultation-btn, .right-container .consultation-btn {
+        margin-top: -3px;
+        width: 220px;
+        height: 45px;
+      }
+      
+}
+
+/* Mobile (large devices) */
+@media (max-width: 600px) {
+
+
+}

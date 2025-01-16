@@ -1,0 +1,113 @@
+.navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(248, 245, 238, 0.9215686274509803);
+    padding: 0 10%;
+    z-index: 100;
+    transition: all 1.3s ease-in-out;
+    top: -10%;
+
+
+}
+.navbar img {
+    width: 180px;
+    margin: 20px 0;
+}
+
+.dark-btn {
+    font-family: "Lora", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #91854C;
+    border-style: none;
+    border-radius: 26px 26px 26px 26px;
+    padding: 13px 25px;
+    cursor: pointer;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+/* Large desktops and high-resolution screens */
+@media (max-width: 1920px) {
+   .navbar {
+    padding: 0 8%;
+   }
+
+   .navbar img {
+    width: 180px;
+}
+}
+
+/* Large tablets & desktops */
+@media (max-width: 1440px) {
+
+    .navbar {
+        padding: 0 6%;
+       }
+
+       .navbar img {
+        width: 180px;
+    }
+
+    .dark-btn {
+
+        padding: 11px 25px;
+        font-size: 15px;
+    
+    }
+    
+}
+
+
+/* Small laptops */
+@media (max-width: 1280px) {
+
+    .navbar {
+        padding: 0 6%;
+       }
+
+       .navbar img {
+        width: 180px;
+    }
+
+    .dark-btn {
+
+        padding: 11px 25px;
+        font-size: 15px;
+    
+    }
+    
+}
+
+/* Tablet (portrait) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 6%;
+       }
+
+       .navbar img {
+        width: auto;
+        max-width: 160px;
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    .logo-container {
+        width: 50%;
+    }
+    .dark-btn {
+
+        display: none;
+    
+    }
+
+   
+}

@@ -1,0 +1,273 @@
+
+.gap {
+    padding: 0 20px;
+}
+
+.slide {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 80px 50px 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 6.4px 5px rgba(0, 0, 0, 0.055);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    transition: 0.3s ease-out;
+    height: 350px;
+
+}
+
+
+.slide .expert-image {
+    display: block;
+    border-radius: 100%;
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Ensures circular shape */
+    margin-bottom: 40px;
+    position: absolute;
+    top: 6%;
+}
+
+.carousel-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+    
+}
+
+.carousel-content h2{
+    color: #08313A;
+    font-family: "Lora", Sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 30px;
+    
+}
+
+.carousel-content ul li {
+
+    color: #00000093;
+    font-family: "Lora", Sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 20px;
+    
+    
+}
+
+.carousel-content .uni-image {
+    margin-top: 20px;
+    width: 120px;
+}
+
+
+.experts-slider-container {
+    padding: 0 5%;
+}
+
+
+.experts-slider-container .slick-arrow.slick-prev {
+    position: absolute;
+    background: url("../../assets/prev-icon.png") no-repeat center center; /* Add your icon URL here */
+    background-size: contain; /* Ensure the image fits */
+    color: transparent; /* Hide the text */
+    border: none; /* Remove default button border */
+    width: 30px; /* Adjust width to fit your icon */
+    height: 30px; /* Adjust height to fit your icon */
+    text-indent: -9999px; /* Completely hide the text */
+    cursor: pointer; /* Add a pointer for better UX */
+    top: 60%;
+    left: -3%;
+  }
+
+.experts-slider-container .slick-arrow.slick-next {
+    position: absolute;
+    background: url("../../assets/next-icon.png") no-repeat center center; /* Add your icon URL here */
+    background-size: contain; /* Ensure the image fits */
+    color: transparent; /* Hide the text */
+    border: none; /* Remove default button border */
+    width: 30px; /* Adjust width to fit your icon */
+    height: 30px; /* Adjust height to fit your icon */
+    text-indent: -9999px; /* Completely hide the text */
+    cursor: pointer; /* Add a pointer for better UX */
+    top: 60%;
+    right: -3%;
+  }
+
+
+  
+/* Large tablets & desktops */
+@media (max-width: 1440px) {
+
+    .gap {
+        padding: 0 10px;
+    }
+
+    .slide {
+        padding: 120px 20px 80px 20px;
+        height: 320px;
+    
+    }
+
+    
+    .slide .expert-image {
+        width: 100px; /* Adjust size as needed */
+        height: 100px; /* Ensures circular shape */
+        margin-bottom: 40px;
+        position: absolute;
+        top: 8%;
+    }
+
+    
+    .carousel-content h2{
+        font-size: 22px;
+        line-height: 30px;
+        
+    }
+
+    .carousel-content ul li {
+        font-size: 12px;
+    }
+
+
+
+    
+}
+
+
+/* Small laptops */
+@media (max-width: 1280px) {
+
+    .slide {
+        padding: 80px 20px 80px 20px;
+        height: 320px;
+    
+    }
+
+    .slide .expert-image {
+        width: 90px; /* Adjust size as needed */
+        height: 90px; /* Ensures circular shape */
+        margin-bottom: 40px;
+        position: absolute;
+        top: 8%;
+    }
+
+    .carousel-content h2{
+        font-size: 20px;
+        line-height: 30px;
+        
+    }
+
+    .carousel-content ul li {
+        font-size: 11px;
+    }
+    
+
+    
+}
+
+@media (max-width: 998px) { 
+
+    .slide {
+        padding: 80px 20px 80px 20px;
+        height: 320px;
+    
+    }
+
+    .slide .expert-image {
+        width: 100px; /* Adjust size as needed */
+        height: 100px; /* Ensures circular shape */
+        margin-bottom: 40px;
+        position: absolute;
+        top: 8%;
+    }
+
+    .experts-slider-container {
+        padding: 0 3%;
+        margin-top: -20px;
+    }
+
+    .experts-slider-container .slick-arrow.slick-prev {
+    top: 50%;
+    left: -9%;
+    }
+
+    .experts-slider-container .slick-arrow.slick-next {
+
+    right: -9%;
+    top: 50%;
+
+    }
+
+    
+    .carousel-content h2{
+        font-size: 24px;
+        line-height: 30px;
+        
+    }
+
+    .carousel-content ul li {
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+/* Tablet (portrait) */
+@media (max-width: 768px) {
+
+    .experts-slider-container {
+        padding-bottom: 50px;
+    }
+
+    .experts-slider-container .slick-arrow.slick-prev {
+        top: 105%;
+        left: 6%;
+        }
+    
+        .experts-slider-container .slick-arrow.slick-next {
+    
+        top: 105%;
+        right: 6%;
+    
+        }
+
+    
+.slide {
+    padding: 40px 30px 40px 30px;
+    height: 370px;
+
+}
+
+
+.slide .expert-image {
+    width: 110px; /* Adjust size as needed */
+    height: 110px; /* Ensures circular shape */
+    margin-bottom: 40px;
+    position: absolute;
+    top: 8%;
+}
+
+.carousel-content h2{
+    font-size: 22px;
+    line-height: 30px;
+    
+}
+
+.carousel-content ul li {
+    font-size: 14px;
+}
+
+.universties-list {margin-top: 0px;
+}
+   
+}
+

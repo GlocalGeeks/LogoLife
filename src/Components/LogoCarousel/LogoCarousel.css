@@ -1,0 +1,54 @@
+/* General styles */
+.logo-carousel-image img {
+    width: 100%;
+    max-width: 90%;
+    padding: 20px 40px; /* Adjusted padding for better balance */
+    height: auto;
+    /* transition: all 0ms linear; */
+    object-fit: contain; /* Ensures the aspect ratio of the images are maintained */
+  }
+  
+  .slider-container {
+    padding: 0 2%;
+    padding-top: 40px;
+    overflow-x: hidden;
+  }
+  
+  /* Large tablets & desktops */
+  @media (max-width: 1440px) {
+    .logo-carousel-image img {
+      width: 70%; /* Slightly smaller for large screens */
+    }
+  }
+  
+  /* Small laptops */
+  @media (max-width: 1280px) {
+    .slider-container {
+      padding-top: 30px;
+    }
+  
+    .logo-carousel-image img {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  /* Medium screens like tablets */
+  @media (max-width: 998px) {
+    .slider-container {
+      padding-top: 30px;
+    }
+  
+    .logo-carousel-image img {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  /* Small screens (mobile devices) */
+  @media (max-width: 600px) {
+    .logo-carousel-image img {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,301 @@
+.advantage-section{
+    padding: 100px 0px;
+    background: radial-gradient(50% 50% at 50% 50%, #1A5653 0%, #08313A 100%);
+
+    
+}
+
+.features{
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.heading-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.heading-container h2 {
+    font-family: "Lora", Sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 58px;
+    color: white;
+}
+
+.heading-container h2 span {
+    font-family: "Lora", Sans-serif;
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 58px;
+    font-style: italic;
+    color: white;
+
+}
+
+.heading-container p {
+    font-family: 'SFPro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: white;
+    width: 54%;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% / 4), 1fr));
+    gap: 30px;
+}
+
+.single-feature {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF1A;
+    border-radius: 20px;
+    gap: 5px;
+    padding: 40px 35px;
+    color: inherit;
+}
+
+.single-feature:hover {
+
+    background: #BBEEBA;
+    transition: ease-in 0.2s;
+    color: #08313A;
+}
+
+.single-feature:hover p,
+.single-feature:hover h1,
+.single-feature:hover h2 {
+    color: #08313A; /* Ensure all text inside the container also inherits the hover color */
+}
+
+
+.single-feature img {
+    width: 56px;
+    margin-bottom: 40px;
+
+}
+
+.single-feature h2 {
+    color: #FFFFFF;
+    font-family: 'SFPro', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 36px;
+}
+
+.single-feature p {
+    color: #FFFFFF;
+    font-family: 'SFPro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* Large tablets & desktops */
+@media (max-width: 1440px) {
+
+
+    .features-container {
+        gap: 20px;
+    }
+
+    
+.heading-container h2 {
+    font-size: 45px;
+    line-height: 58px;
+}
+
+.heading-container h2 span {
+    font-size: 45px;
+    line-height: 58px;
+}
+
+.heading-container p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.single-feature {
+    padding: 40px 30px;
+}
+
+       
+.single-feature h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.single-feature p {
+    font-size: 14px;
+}
+
+
+    
+}
+
+
+/* Small laptops */
+@media (max-width: 1280px) {
+
+    .heading-container h2 {
+        font-size: 42px;
+        line-height: 58px;
+    }
+    
+    .heading-container h2 span {
+        font-size: 42px;
+        line-height: 58px;
+    }
+    
+    .heading-container p {
+        font-size: 15px;
+        font-weight: 300;
+        width: 500px;
+    }
+
+       
+.single-feature h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.single-feature p {
+    font-size: 15px;
+}
+    
+}
+
+@media (max-width: 998px) { 
+
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(calc(100% / 3), 2fr));
+        gap: 15px;
+    }
+
+    .heading-container h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    
+    .heading-container h2 span {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    
+    .heading-container p {
+        font-size: 14px;
+        font-weight: 300;
+        width: 100%;
+        text-align: justify;
+    }
+
+.single-feature {
+        border-radius: 15px;
+        gap: 2px;
+        padding: 40px 20px;
+    }
+
+    .single-feature img {
+    width: 20px;
+}
+    
+
+    
+.single-feature h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.single-feature p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.single-feature img {
+    width: 50px;
+    margin-bottom: 25px;
+
+}
+
+}
+
+
+
+/* Tablet (portrait) */
+@media (max-width: 768px) {
+
+    .advantage-section {
+        padding: 60px 0px;
+
+    }
+
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .heading-container h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .heading-container h2 span {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    
+    .heading-container p {
+        font-size: 14px;
+        font-weight: 300;
+        width: 100%;
+        text-align: justify;
+    }
+
+.single-feature {
+        border-radius: 15px;
+        gap: 2px;
+        padding: 30px 20px;
+    }
+
+    .single-feature img {
+    width: 20px;
+}
+    
+
+    
+.single-feature h2 {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.single-feature p {
+    font-size: 9px;
+}
+
+.single-feature img {
+    width: 40px;
+
+}
+
+  
+   
+}
+
+
+/* Mobile (large devices) */
+@media (max-width: 600px) {
+
+         
+}
