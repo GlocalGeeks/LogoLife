@@ -10,7 +10,6 @@ import TestimonialSection from "../Components/TestimonialSection/TestimonialSect
 import AdvantageSection from '../Components/AdvantageSection/AdvantageSection';
 import CalendlySection from "../Components/CalendlySection/CalendlySection"
 import ExpertsSection from '../Components/ExpertsSection/ExpertsSection';
-import TestingCarousel from '../Components/TestingCarousel/TestingCarousel';
 
 export const Home = () => {
   return (

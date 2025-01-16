@@ -11,7 +11,6 @@ import CalendlySection from "../Components/CalendlySection/CalendlySection"
 import ExpertsSection from '../Components/ExpertsSection/ExpertsSection';
 import TechHero from '../Components/TechHero/TechHero';
 import TechHeroLogo from '../Components/TechHeroLogo/TechHeroLogo';
-import TestingCarousel from '../Components/TestingCarousel/TestingCarousel';
 
 export const LeadingProgram = () => {
   return (
